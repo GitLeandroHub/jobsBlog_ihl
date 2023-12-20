@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="note" content="environment=development"/><script id="simple-analytics-loader" type="text/javascript" data-loaded="false">!(function(s, i, m, p, l, e) {
+    const parent = document.querySelector('#simple-analytics-loader');
+    if (!parent) return;
+    const dnt = s.doNotTrack || m.doNotTrack || m.msDoNotTrack;
+    if (/yes|1/.test(dnt) && parent) {
+      parent.setAttribute('data-enabled', false);
+      return console.warn('Simple Analytics: Not loading script when doNotTrack is enabled');
+    }
+    l = i.createElement(p);
+    l.addEventListener('load', function() {
+      if (parent) {
+      parent.setAttribute('data-loaded', true);
+        let event;
+        if (typeof Event === 'function') {
+          event = new Event('script-loaded');
+        } else {
+          event = document.createEvent('Event');
+          event.initEvent('script-loaded', true, true);
+        }
+        parent.dispatchEvent(event);
+      }
+    }, false)
+    l.async = "true";
+    l.src="https://apisa.parity.io/latest.js";
+    l.type="text/javascript";
+    l.setAttribute('id', 'simple-analytics');
+    
+    e = i.getElementsByTagName(p)[0];
+    e.parentNode.insertBefore(l, e);
+  })(
+    window,
+    document,
+    navigator,
+    'script'
+  )</script><title data-react-helmet="true"></title><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=dcef83a846027edb03e04844b87ca1db" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#FF1864"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=dcef83a846027edb03e04844b87ca1db"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=dcef83a846027edb03e04844b87ca1db"/><script src="/socket.io/socket.io.js"></script></head><body><div id="___gatsby"></div><script src="/polyfill.js" nomodule=""></script><script src="/commons.js"></script><img class="opacity-0 absolute h-0 -z-10" src="https://cloudcdn-img.com/static/prt/spacer.gif" referrerPolicy="no-referrer-when-downgrade"/></body></html>
