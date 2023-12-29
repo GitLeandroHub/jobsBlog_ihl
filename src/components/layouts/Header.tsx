@@ -7,7 +7,7 @@ import ihlLogo from '../../images/invisible_logo_dark.png';
 
 const navItemsDiv = 'px-2 pt-2 pb-4 h-screen flex flex-col lg:h-auto lg:flex lg:flex-row lg:items-center lg:mt-8';
 const navItemStyles =
-  'block mt-1 px-4 py-1 font-title font-semibold  text-navItemColor tracking-nav no-underline uppercase  hover:text-textLight text-center animate-fade-in';
+  'block mt-1 px-4 py-1 font-size-16 font-extrabold text-lg text-navItemColor tracking-nav no-underline uppercase  hover:text-textLight text-center animate-fade-in';
 const socialIcons = 'w-6 h-auto fill-current text-navItemColor hover:text-textLight mx-4 animate-fade-in';
 
 export default function Header() {

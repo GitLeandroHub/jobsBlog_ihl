@@ -35,7 +35,7 @@ export default function BlogTemplate(props: BlogTemplateProps) {
         keywords={props.data.mdx.frontmatter.tags}
         url={`https://www.parity.io/${props.data.mdx.frontmatter.slug}/`}
       />
-      <section className="md:bg-hero-pattern bg-top bg-no-repeat bg-contain">
+      <section className="md:bg-hero-pattern bg-top bg-repeat bg-contain">
         <div className="md:flex md:justify-center">
           <article className="mx-4 font-normal md:text-lg xl:text-xl max-w-screen-md">
             <div className="">
@@ -85,7 +85,7 @@ export default function BlogTemplate(props: BlogTemplateProps) {
           </article>
         </div>
       </section>
-      <section className="bg-parityWhite h-full">
+      <section className="bg-parityWhite h-full md:bg-hero-pattern-dark bg-top bg-auto bg-fixed">
         <div className="container pb-16">
           <h4 className="md:text-2xl font-medium pt-20 mt-0 mx-4 md:mb-0">More recent stories</h4>
           <div className="md:flex">

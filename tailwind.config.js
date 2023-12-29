@@ -32,7 +32,7 @@ module.exports = {
         buttonRed: '#ff0048',
         textDark: '#282828',
         textLight: '#757575',
-        navItemColor: '#b4b5b1',
+        navItemColor: '#ed1375',
         footerDark: '#1b1b1b',
         footerLight: '#282828',
         twitter: '#00aced',
