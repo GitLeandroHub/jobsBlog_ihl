@@ -3,37 +3,33 @@ import React from 'react';
 const ApplyJobPage = () => {
   return (
     <div className="bg-white max-w-2xl mx-auto p-4 shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-4">Kinera - Junior Developer</h1>
+      <h1 className="text-3xl font-bold mb-4">Kinera - Chief Technology Officer (CTO)</h1>
       <p className="mb-4">
-        Kinera is the home for the best audiovisual media content in the Web3 environment. We are building a highly ambitious team of blockchain, application, and video software engineers to implement a resilient, tokenised, curation ecosystem that unites a diverse community of viewers and nonconformist media creators. This time we are looking for a junior passionate developer in the best case graduated as a software engineer with an interest or experience in substrate and knowledge of the Polkadot environment.
+        As the CTO at Kinera, you will be responsible for developing and ensuring our products are innovative, secure, and aligned with our business goals. We are seeking a highly skilled Substrate developer to lead our technology team in achieving excellence. Your role will include overseeing technology research and development, product development, and ensuring expertise in blockchain, cryptography, security, and risk management. 
       </p>
       <p className="mb-4">
-        If you want to work on a challenging project focusing on new media narratives that mirror the complexity and creativity of the world we live in, then this is your role. Take a look at the project at <a href="http://www.kinera.network" className="text-blue-500">www.kinera.network</a>
+        This is a leadership role requiring strong skills in team management, infrastructure management, regulatory compliance, and partnership collaboration. You will also be responsible for maintaining an excellent user experience and interface, alongside efficient budget management. Learn more about our vision at <a href="http://www.kinera.network" className="text-blue-500">www.kinera.network</a>.
       </p>
-      <h2 className="text-2xl font-bold mb-2">Required skills:</h2>
+      <h2 className="text-2xl font-bold mb-2">Required skills and qualifications:</h2>
       <ul className="list-disc pl-4 mb-4">
-        <li>Experience with C++, Rust, Go, or similar languages.</li>
-        <li>At least 1 year of professional experience with blockchain technology.</li>
-        <li>Experience working remotely.</li>
-        <li>Strong English skills.</li>
-        <li>Comfortable with personal organization and communication.</li>
-        <li>Ability to quickly learn and adapt under pressure.</li>
-        <li>Able to read and understand documentation and source code.</li>
-        <li>Knowledgeable of Git and CI/CD practices.</li>
+        <li>Proven experience as a CTO or similar leadership role in technology.</li>
+        <li>Expertise in Substrate development and blockchain technologies.</li>
+        <li>Strong understanding of cryptography and security protocols.</li>
+        <li>Experience with infrastructure management and cloud technologies.</li>
+        <li>Knowledge of regulatory compliance and standards in the tech industry.</li>
+        <li>Excellent leadership and team management skills.</li>
+        <li>Strong budget management and financial acumen.</li>
+        <li>Ability to drive innovation and product development.</li>
       </ul>
-      <h2 className="text-2xl font-bold mb-2">What you will do:</h2>
+      <h2 className="text-2xl font-bold mb-2">Key responsibilities:</h2>
       <ul className="list-disc pl-4 mb-4">
-        <li>Organize yourself alongside the team.</li>
-        <li>Build, operate and maintain our backend codebase.</li>
-        <li>Document your work.</li>
-        <li>Team up with other members to implement solutions.</li>
-        <li>Contribute to the project via your personal input.</li>
-      </ul>
-      <h2 className="text-2xl font-bold mb-2">Nice to have:</h2>
-      <ul className="list-disc pl-4 mb-4">
-        <li>Experience with DotSama technology, Substrate, or FRAME.</li>
-        <li>Experience contributing to Open Source/ Blockchain projects.</li>
-        <li>Prior attendance at blockchain events.</li>
+        <li>Lead and manage the technology team.</li>
+        <li>Direct research and development of new technologies.</li>
+        <li>Ensure product development aligns with business goals.</li>
+        <li>Manage security, risk, and compliance issues.</li>
+        <li>Oversee the development of user-centric interfaces and experiences.</li>
+        <li>Maintain effective partnerships and collaborations.</li>
+        <li>Manage technology infrastructure and resources.</li>
       </ul>
       <div className="pt-12 pb-4 md:flex md:place-content-center">
         <form action="https://formsubmit.co/kine.newsletter@gmail.com" method="POST" encType="multipart/form-data">
@@ -58,12 +54,8 @@ const ApplyJobPage = () => {
             <input type="text" name="location" className="hs_email w-full mb-4" required />
           </div>
           <div className="form-group">
-            <label>Locate me</label>
-            <input type="checkbox" name="locateMe" className="hs_email" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="resume">Resume/CV *</label>
-            <input type="file" name="resume" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" required />
+            <label htmlFor="resume">Resume/CV</label>
+            <input type="file" name="resume" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" />
           </div>
           <div className="form-group">
             <label htmlFor="coverLetter">Cover Letter</label>
@@ -86,4 +78,4 @@ const ApplyJobPage = () => {
   );
 };
 
-export default ApplyJobPage;  
+export default ApplyJobPage;
