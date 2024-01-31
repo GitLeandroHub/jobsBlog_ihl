@@ -36,7 +36,7 @@ const ApplyJobPage = () => {
         <li>Prior attendance at blockchain events.</li>
       </ul>
       <div className="pt-12 pb-4 md:flex md:place-content-center">
-        <form action="https://formsubmit.co/kine.newsletter@gmail.com" method="POST" encType="multipart/form-data">
+        <form action="https://formsubmit.co/miguel@invisiblehandlab.com" method="POST" encType="multipart/form-data">
           <div className="form-group">
             <label htmlFor="firstName">First Name *</label>
             <input type="text" name="firstName" className="hs_email w-full mb-4" required />

@@ -28,7 +28,7 @@ export default function ContactPage({ data }: ContactPageProps) {
               
               <div className="pt-12 pb-4 md:flex md:place-content-center">
   
-  <form action="https://formsubmit.co/kine.newsletter@gmail.com" method="POST" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/miguel@invisiblehandlab.com" method="POST" enctype="multipart/form-data">
     <div className="form-group">
       <label htmlFor="firstName">First Name *</label>
       <input type="text" name="firstName" className="hs_email" required/>
