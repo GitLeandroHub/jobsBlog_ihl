@@ -31,7 +31,7 @@ export default function BlogPage(props: BlogPageProps) {
           </h4>
         </div>
       </section>
-      <section className="mx-4 -mt-16 h-full md:bg-hero-pattern bg-top bg-auto bg-fixed">
+      <section className="mx-4 -mt-16 h-full md:bg-hero-pattern-2 bg-top bg-auto bg-fixed">
         {data.allMdx.edges.slice(0, visibleBlogs).map((edge: any, index: any) => {
           return (
             <article key={index}>
