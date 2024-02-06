@@ -36,7 +36,7 @@ const ApplyJobPage = () => {
         <li>Prior attendance at blockchain events.</li>
       </ul>
       <div className="pt-12 pb-4 md:flex md:place-content-center">
-        <form action="https://formsubmit.co/miguel@invisiblehandlab.com" method="POST" encType="multipart/form-data">
+      <form action="https://formsubmit.co/miguel@invisiblehandlab.com" method="POST" encType="multipart/form-data">
           <div className="form-group">
             <label htmlFor="firstName">First Name *</label>
             <input type="text" name="firstName" className="hs_email w-full mb-4" required />
@@ -58,12 +58,8 @@ const ApplyJobPage = () => {
             <input type="text" name="location" className="hs_email w-full mb-4" required />
           </div>
           <div className="form-group">
-            <label>Locate me</label>
-            <input type="checkbox" name="locateMe" className="hs_email" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="resume">Resume/CV *</label>
-            <input type="file" name="resume" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" required />
+            <label htmlFor="resume">Resume/CV</label>
+            <input type="file" name="resume" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" />
           </div>
           <div className="form-group">
             <label htmlFor="coverLetter">Cover Letter</label>

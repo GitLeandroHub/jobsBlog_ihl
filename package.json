@@ -1,12 +1,12 @@
 {
-  "name": "parity-website",
+  "name": "invisiblehandlab-blog-jobs",
   "version": "1.0.0",
   "private": true,
-  "description": "parity-website",
-  "author": "Parity Web Guild",
+  "description": "invisiblehandlab-blog-jobs-website",
+  "author": "invisiblehandlab Web Guild",
   "keywords": [
     "gatsby",
-    "parity",
+    "invisiblehandlab",
     "blockchain"
   ],
   "scripts": {

@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.parity.io',
+  URL: NETLIFY_SITE_URL = 'https://invisiblehandlab.org/',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -17,7 +17,7 @@ module.exports = {
     description:
       'InvisibleHandLab - Community-driven, blockchain-based solutions.',
     keywords: ['Blockchain', 'Polkadot', 'Substrate', 'Web3.0', 'InvisibleHandLab'],
-    author: 'Parity WebDev Team',
+    author: 'Invisiblehandlab WebDev Team',
     pressEmail: 'press@ihl.com',
     email: 'press@ihl.com',
     twitter: 'https://twitter.com/InvisibleHandLab',
@@ -118,7 +118,7 @@ module.exports = {
             `,
             output: '/rss.xml',
             title: 'InvisibleHandLab Blog Feed',
-            link: 'https://www.parity.io',
+            link: 'https://invisiblehandlab.org/',
             language: `en-US`,
             webMaster: 'Imad Arain',
             managingEditor: 'Zach Cavanaugh',
@@ -143,7 +143,7 @@ module.exports = {
               'PICOPS',
               'Parity Bridge',
             ],
-            copyright: 'Copyright 2021 InvisibleHandLab',
+            copyright: 'Copyright 2024 InvisibleHandLab',
             feed_url: 'http://www.parity.io/rss.xml',
             ttl: '60',
             match: '^/blog/',
