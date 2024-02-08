@@ -21,55 +21,46 @@ const ApplyJobPage = () => {
         <li>Strong budget management and financial acumen.</li>
         <li>Ability to drive innovation and product development.</li>
       </ul>
-      <h2 className="text-2xl font-bold mb-2">Key responsibilities:</h2>
-      <ul className="list-disc pl-4 mb-4">
-        <li>Lead and manage the technology team.</li>
-        <li>Direct research and development of new technologies.</li>
-        <li>Ensure product development aligns with business goals.</li>
-        <li>Manage security, risk, and compliance issues.</li>
-        <li>Oversee the development of user-centric interfaces and experiences.</li>
-        <li>Maintain effective partnerships and collaborations.</li>
-        <li>Manage technology infrastructure and resources.</li>
-      </ul>
       <div className="pt-12 pb-4 md:flex md:place-content-center">
-        <form action="https://formsubmit.co/miguel@invisiblehandlab.com" method="POST" encType="multipart/form-data">
+        <form action="https://formcarry.com/s/d6F5r-PyHwG" method="POST" acceptCharset="UTF-8" encType="multipart/form-data">
           <div className="form-group">
             <label htmlFor="firstName">First Name *</label>
-            <input type="text" name="firstName" className="hs_email w-full mb-4" required />
+            <input type="text" name="firstName" className="form-control w-full mb-4" required />
           </div>
           <div className="form-group">
             <label htmlFor="lastName">Last Name *</label>
-            <input type="text" name="lastName" className="hs_email w-full mb-4" required />
+            <input type="text" name="lastName" className="form-control w-full mb-4" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email *</label>
-            <input type="email" name="email" className="hs_email w-full mb-4" required />
+            <input type="email" name="email" className="form-control w-full mb-4" required />
           </div>
           <div className="form-group">
             <label htmlFor="phone">Phone</label>
-            <input type="tel" name="phone" className="hs_email w-full mb-4" />
+            <input type="tel" name="phone" className="form-control w-full mb-4" />
           </div>
           <div className="form-group">
             <label htmlFor="location">Location (City) *</label>
-            <input type="text" name="location" className="hs_email w-full mb-4" required />
+            <input type="text" name="location" className="form-control w-full mb-4" required />
           </div>
           <div className="form-group">
-            <label htmlFor="resume">Resume/CV</label>
-            <input type="file" name="resume" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" />
+            <label htmlFor="resumeLink">Resume/CV Link *</label>
+            <textarea name="resumeLink" className="form-control form-textarea w-full mb-4" placeholder="Paste the shareable link to your resume/CV here." required />
           </div>
           <div className="form-group">
-            <label htmlFor="coverLetter">Cover Letter</label>
-            <input type="file" name="coverLetter" accept=".pdf, .doc, .docx, .txt, .rtf" className="hs_email w-full mb-4" />
+            <label htmlFor="coverLetterLink">Cover Letter Link *</label>
+            <textarea name="coverLetterLink" className="form-control form-textarea w-full mb-4" placeholder="Paste the shareable link to your cover letter here." required />
           </div>
           <div className="form-group">
             <label htmlFor="linkedin">LinkedIn Profile</label>
-            <input type="text" name="linkedin" className="hs_email w-full mb-4" />
+            <input type="text" name="linkedin" className="form-control w-full mb-4" />
           </div>
           <div className="form-group">
             <label htmlFor="website">Website</label>
-            <input type="text" name="website" className="hs_email w-full mb-4" />
+            <input type="text" name="website" className="form-control w-full mb-4" />
           </div>
-          <button type="submit" className="btn-dark btn-lg btn-block mt-4 mb-4" style={{ backgroundColor: '#FF4081', color: '#ffffff', padding: '0.5rem 1rem' }}>
+          <input type="hidden" name="jobPosition" value="Kinera - Chief Technology Officer" />
+          <button type="submit" className="btn btn-dark btn-lg btn-block mt-4 mb-4" style={{ backgroundColor: '#FF4081', color: '#ffffff', padding: '0.5rem 1rem' }}>
             Submit Application
           </button>
         </form>

@@ -115,21 +115,94 @@
     text-decoration-thickness: .05em;
     }
 
-    /* Forms */
-    input, textarea {
-    @apply block px-3 py-2 border rounded text-sm;
+    /* FORMS */
+    /* Base settings */
+    .bg-white {
+        @apply bg-gray-50;
     }
 
-    input:focus, textarea:focus {
-    @apply outline-none;
+    .shadow-lg {
+        @apply shadow-xl;
+    }
+
+    .rounded-lg {
+        @apply rounded-2xl;
+    }
+
+    .text-blue-500 {
+        @apply text-indigo-600 hover:text-indigo-800;
+    }
+
+    /* Forms enhancement */
+    .form-control {
+        @apply w-full mb-4 px-4 py-2 border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-indigo-500 focus:border-indigo-500;
+    }
+
+    /* Targeting specifically textarea within form controls */
+    .form-control.form-textarea {
+    height: 2rem; /* Example height, adjust as needed */
+    }
+
+    .form-control:focus {
+        @apply ring-2 ring-indigo-500 border-transparent;
     }
 
     label {
-    @apply block mb-2 text-sm font-semibold;
+        @apply text-sm font-medium text-gray-700;
     }
 
-    input[type="submit"], input[type="button"], input[type="reset"] {
-    @apply inline-block px-4 py-2 bg-gray-200 font-semibold;
+    textarea {
+        @apply h-32;
+    }
+
+    /* Submit button */
+    .btn {
+        @apply inline-block w-full text-center py-2 rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-150 ease-in-out;
+    }
+
+    .btn-lg {
+        @apply text-lg py-3;
+    }
+
+    /* Utility classes for the layout and spacing */
+    .max-w-2xl {
+        @apply max-w-4xl;
+    }
+
+    .p-4 {
+        @apply p-6;
+    }
+
+    .mb-4 {
+        @apply mb-6;
+    }
+
+    .text-3xl {
+        @apply text-4xl;
+    }
+
+    .text-2xl {
+        @apply text-3xl;
+    }
+
+    .list-disc {
+        @apply list-inside;
+    }
+
+    /* Adjustments for mobile responsiveness */
+    @media (min-width: 768px) {
+        .custom-center {
+            @apply mx-auto; /* Correct use of @apply for centering */
+        }
+
+        /* Enhanced form controls with no circular dependencies */
+        .form-control {
+            @apply w-full mb-4 px-4 py-2 border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-indigo-500 focus:border-indigo-500;
+        }
+
+        label {
+            @apply text-lg;
+        }
     }
 
     /* Images */

@@ -133,12 +133,12 @@ var plugins = [{
       "query": "\n              {\n                allMdx(sort: {order: DESC, fields: [frontmatter___date_published]}) {\n                  edges {\n                    node {\n                      excerpt\n                      html\n                      timeToRead\n                      frontmatter {\n                        tags\n                        slug\n                        image\n                        date_published(formatString: \"MMMM DD, YYYY\")\n                        author\n                        blogTitle\n                      }\n                    }\n                  }\n                }\n              }\n            ",
       "output": "/rss.xml",
       "title": "InvisibleHandLab Blog Feed",
-      "link": "https://www.parity.io",
+      "link": "https://invisiblehandlab.org/",
       "language": "en-US",
       "webMaster": "Imad Arain",
       "managingEditor": "Zach Cavanaugh",
       "categories": ["Community", "Polkadot", "Releases", "Parity Substrate", "People of Parity", "Rust", "Wasm", "Partnerships", "Custom Solutions", "Security", "ink!", "Parity Ethereum", "Parity Fether", "Light.js", "Company and Culture", "Parity Signer", "Zcash", "PICOPS", "Parity Bridge"],
-      "copyright": "Copyright 2021 InvisibleHandLab",
+      "copyright": "Copyright 2024 InvisibleHandLab",
       "feed_url": "http://www.parity.io/rss.xml",
       "ttl": "60",
       "match": "^/blog/"
@@ -42607,7 +42607,7 @@ function __classPrivateFieldIn(state, receiver) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"siteUrl\":\"https://www.parity.io\"}}}}");
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"siteUrl\":\"https://invisiblehandlab.org\"}}}}");
 
 /***/ }),
 
