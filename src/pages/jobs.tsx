@@ -63,6 +63,16 @@ export default function JobsPage() {
                 <h4 className="text-2xl md:text-4xl font-normal mb-10 mt-10">
                   {intl.formatMessage({ id: 'jobs-page-footer-cta-title' })}
                 </h4>
+                <Button link="https://kinera.network" extraClass="mb-10" isExternal={true}>
+                  {intl.formatMessage({ id: 'jobs-page-footer-cta-button-text2' })}
+                </Button>
+              </div>
+            </section>
+            <section className="border-t h-full">
+              <div className="container">
+                <h4 className="text-2xl md:text-4xl font-normal mb-10 mt-10">
+                  {intl.formatMessage({ id: 'jobs-page-footer-cta-title2' })}
+                </h4>
                 <Button link="/blog" extraClass="mb-10">
                   {intl.formatMessage({ id: 'jobs-page-footer-cta-button-text' })}
                 </Button>
