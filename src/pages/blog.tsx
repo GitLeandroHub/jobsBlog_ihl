@@ -17,12 +17,24 @@ export default function BlogPage(props: BlogPageProps) {
   const { data } = props;
   const [visibleBlogs, setVisibleBlogs] = useState(10);
 
+  // Adjust the hero section's bottom padding to avoid overlap
+  const heroSectionStyle = {
+    paddingBottom: '5rem', // Increase bottom padding to push content down
+  };
+
+  // Additional style to ensure the content section moves down accordingly
+  const contentSectionStyle = {
+    marginTop: '-5rem', // Adjust the margin to pull the section up or down as needed
+    paddingTop: '18rem', // Add padding to compensate for the negative margin, ensuring content isn't hidden
+    backgroundAttachment: 'scroll', // Change to 'scroll' to move with the rest of the page
+  };
+
   return (
     <Layout theme="light">
       <SEO title={intl.formatMessage({ id: 'blog-page-seo' })} />
-      <section className="block h-hero min-h-heroMin">
-        <div className="absolute h-hero min-h-heroMin z-0 w-full top-0 left-0 bg-hero-blogPage bg-cover bg-center"></div>
-        <div className="container relative text-center text-white h-5/6 flex flex-col justify-center">
+      <section className="block h-hero min-h-heroMin" style={heroSectionStyle}>
+        <div className="absolute h-full w-full top-0 left-0 bg-hero-blogPage bg-cover bg-center"></div>
+        <div className="container relative text-center text-white flex flex-col justify-center items-center" style={{ height: '100vh' }}>
           <h3 className="text-white font-bold md:text-5xl md:mb-8">
             {intl.formatMessage({ id: 'blog-page-title' })}
           </h3>
@@ -31,7 +43,7 @@ export default function BlogPage(props: BlogPageProps) {
           </h4>
         </div>
       </section>
-      <section className="mx-4 -mt-16 h-full md:bg-hero-pattern-2 bg-top bg-auto bg-fixed">
+      <section className="mx-4 h-full md:bg-hero-pattern-2 bg-top bg-auto" style={contentSectionStyle}>
         {data.allMdx.edges.slice(0, visibleBlogs).map((edge: any, index: any) => {
           return (
             <article key={index}>
