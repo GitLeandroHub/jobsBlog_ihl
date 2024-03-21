@@ -26,7 +26,7 @@ export default function ContactPage({ data }: ContactPageProps) {
                 {intl.formatMessage({ id: 'contact-page-title' })}
               </h3>
               <div className="pt-12 pb-4 md:flex md:place-content-center">
-                <form action="https://formcarry.com/s/d6F5r-PyHwG" method="POST" acceptCharset="UTF-8" encType="multipart/form-data">
+                <form action="https://formcarry.com/s/CHaqz6Qj_y7" method="POST" acceptCharset="UTF-8" encType="multipart/form-data">
                   <div className="form-group">
                     <label htmlFor="firstName">First Name *</label>
                     <input type="text" name="firstName" className="form-control w-full mb-4" required />
