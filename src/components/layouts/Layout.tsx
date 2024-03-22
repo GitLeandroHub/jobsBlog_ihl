@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { MdxLink } from 'gatsby-theme-i18n';
 import { useLocation } from '@reach/router';
@@ -23,24 +23,31 @@ const components = {
 
 export default function Layout(props: LayoutProps) {
   const location = useLocation();
-  const [cookieClicked, setCookieClicked] = useState(false);
 
   useEffect(() => {
-    const learnMoreAnchor = document.querySelector('.cn-learn-more');
-    learnMoreAnchor?.addEventListener('click', () => {
-      setCookieClicked(!cookieClicked);
-    });
+    document.body.style.visibility = 'hidden';
+
+    const handleLoad = () => {
+      document.body.style.visibility = 'visible';
+    };
+
+    window.addEventListener('load', handleLoad);
+    return () => window.removeEventListener('load', handleLoad);
+  }, []);
+
+  useEffect(() => {
     const acceptCookieButton = document.querySelector('.cm-btn-success');
+    
     acceptCookieButton?.addEventListener('click', () => {
       initializeAndTrack(location);
     });
-  }, [cookieClicked]);
+  }, [location]);
 
   return (
     <>
       <Banner />
       {props.theme === 'light' ? <HeaderLight /> : <Header />}
-      <main className="">
+      <main>
         <ScrollToTop />
         <MDXProvider components={components}>{props.children}</MDXProvider>
       </main>
