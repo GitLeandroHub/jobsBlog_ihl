@@ -4,7 +4,7 @@ export const websiteData = {
   publisher: {
     '@type': 'Organization',
     name: 'Community-driven, blockchain-based solutions.',
-    url: 'https://www.parity.io/',
+    url: 'https://invisiblehandlab.kinera.network/',
     logo: {
       '@type': 'ImageObject',
       url: 'https://drive.google.com/file/d/1O0_ZkG1Kss3RLFMbYnz5f0-sd1uLSq1Y/view?usp=sharing',
@@ -12,16 +12,16 @@ export const websiteData = {
       height: 60,
     },
   },
-  url: 'https://www.parity.io/',
+  url: 'https://invisiblehandlab.kinera.network/',
   image: {
     '@type': 'ImageObject',
-    url: 'https://www.parity.io/images/card-image-parity.png',
+    url: 'https://invisiblehandlab.kinera.network/images/card-image-parity.png',
     width: 1600,
     height: 800,
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://www.parity.io/',
+    '@id': 'https://invisiblehandlab.kinera.network/',
   },
   description:
     'InvisibleHandLab builds core blockchain infrastructure. From Parity Ethereum, the most advanced Ethereum client, to Polkadot, the next-generation interoperable blockchain network.',

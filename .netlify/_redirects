@@ -1,5 +1,5 @@
 # Netlify app dns
-https://parity-website-gatsby.netlify.app/* https://www.parity.io 301!
+https://parity-website-gatsby.netlify.app/* https://invisiblehandlab.kinera.network/ 301!
 
 # Legacy Redirects
 /blog/security-altert /secyrity-alert-2

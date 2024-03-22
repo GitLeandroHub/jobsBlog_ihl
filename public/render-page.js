@@ -104,15 +104,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 var plugins = [{
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-simple-analytics/gatsby-ssr */ "./node_modules/gatsby-plugin-simple-analytics/gatsby-ssr.js"),
-  options: {
-    "plugins": [],
-    "domain": "apisa.parity.io",
-    "eventsGlobal": "sa",
-    "events": true,
-    "trackPageViews": true
-  }
-}, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
   options: {
     "plugins": []
@@ -139,7 +130,7 @@ var plugins = [{
       "managingEditor": "Zach Cavanaugh",
       "categories": ["Community", "Polkadot", "Releases", "Parity Substrate", "People of Parity", "Rust", "Wasm", "Partnerships", "Custom Solutions", "Security", "ink!", "Parity Ethereum", "Parity Fether", "Light.js", "Company and Culture", "Parity Signer", "Zcash", "PICOPS", "Parity Bridge"],
       "copyright": "Copyright 2024 InvisibleHandLab",
-      "feed_url": "http://www.parity.io/rss.xml",
+      "feed_url": "https://invisiblehandlab.kinera.network/rss.xml",
       "ttl": "60",
       "match": "^/blog/"
     }]
@@ -11260,96 +11251,6 @@ var onRenderBody = function onRenderBody(_ref) {
   setHeadComponents([helmet.title.toComponent(), helmet.link.toComponent(), helmet.meta.toComponent(), helmet.noscript.toComponent(), helmet.script.toComponent(), helmet.style.toComponent(), helmet.base.toComponent()]);
 };
 exports.onRenderBody = onRenderBody;
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-simple-analytics/gatsby-ssr.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-simple-analytics/gatsby-ssr.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var React = __webpack_require__(/*! react */ "react");
-var defaultDomain = 'scripts.simpleanalyticscdn.com';
-exports.onRenderBody = function (_ref, pluginOptions) {
-  var setHeadComponents = _ref.setHeadComponents;
-  var domain = pluginOptions.domain || defaultDomain;
-  var scriptName;
-  if (pluginOptions.scriptName) {
-    scriptName = pluginOptions.scriptName;
-  } else {
-    scriptName = 'latest.js';
-  }
-  var scriptUrl = `https://${domain}/${scriptName}`;
-  var options = {
-    src: scriptUrl,
-    async: true,
-    type: 'text/javascript'
-  };
-  if (pluginOptions.metomic) {
-    options.metomic = pluginOptions.metomic;
-  }
-  if (pluginOptions.trackEvents) {
-    options.eventsGlobal = pluginOptions.eventsGlobal;
-  }
-  setHeadComponents([React.createElement('script', {
-    id: 'simple-analytics-loader',
-    key: 'plugin-simpleanalytics',
-    type: options.metomic ? 'text/x-metomic' : 'text/javascript',
-    ['data-micropolicy']: options.metomic,
-    ['data-sa-global']: options.eventsGlobal,
-    ['data-loaded']: false,
-    dangerouslySetInnerHTML: {
-      __html: loadScript(domain, options)
-    }
-  })]);
-}; // this script runs when the page loads, it does the following;
-// 1. Checks the doNotTrack option, and if set then it aborts and does nothing
-// 2. Creates a script tag for the Simple Analytics script
-// 3. Sets all the options properties on the script tag
-// 4. Inserts the script tag before the first other script in the document
-
-var loadScript = function loadScript(domain, options) {
-  return `!(function(s, i, m, p, l, e) {
-    const parent = document.querySelector('#simple-analytics-loader');
-    if (!parent) return;
-    const dnt = s.doNotTrack || m.doNotTrack || m.msDoNotTrack;
-    if (/yes|1/.test(dnt) && parent) {
-      parent.setAttribute('data-enabled', false);
-      return console.warn('Simple Analytics: Not loading script when doNotTrack is enabled');
-    }
-    l = i.createElement(p);
-    l.addEventListener('load', function() {
-      if (parent) {
-      parent.setAttribute('data-loaded', true);
-        let event;
-        if (typeof Event === 'function') {
-          event = new Event('script-loaded');
-        } else {
-          event = document.createEvent('Event');
-          event.initEvent('script-loaded', true, true);
-        }
-        parent.dispatchEvent(event);
-      }
-    }, false)
-    l.async = "true";
-    l.src="${options.src}";
-    l.type="text/javascript";
-    l.setAttribute('id', 'simple-analytics');
-    ${options.eventsGlobal ? `l.setAttribute("data-sa-global", "${options.eventsGlobal}")` : ''}
-    e = i.getElementsByTagName(p)[0];
-    e.parentNode.insertBefore(l, e);
-  })(
-    window,
-    document,
-    navigator,
-    'script'
-  )`;
-};
 
 /***/ }),
 

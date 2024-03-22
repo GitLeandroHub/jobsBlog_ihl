@@ -29,11 +29,11 @@ export default function BlogTemplate(props: BlogTemplateProps) {
     <Layout>
       <SEO
         title={props.data.mdx.frontmatter.blogTitle}
-        image={`https://www.parity.io${props.data.mdx.frontmatter.image}`}
+        image={`https://invisiblehandlab.kinera.network/${props.data.mdx.frontmatter.image}`}
         description={props.data.mdx.excerpt}
         author={props.data.mdx.frontmatter.author}
         keywords={props.data.mdx.frontmatter.tags}
-        url={`https://www.parity.io/${props.data.mdx.frontmatter.slug}/`}
+        url={`https://invisiblehandlab.kinera.network/${props.data.mdx.frontmatter.slug}/`}
       />
       <section className="md:bg-hero-pattern bg-top bg-repeat bg-contain">
         <div className="md:flex md:justify-center">
